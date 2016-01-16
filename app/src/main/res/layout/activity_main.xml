@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start SCAN"
+        android:id="@+id/connectButtonNorth"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:text="LEFT CLICK"
+        android:id="@+id/leftButtonClickWest"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:text="RIGHT CLICK"
+        android:id="@+id/rightButtonClickEast"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START/PAUSE"
+        android:id="@+id/startStopButton"
+        android:layout_alignTop="@+id/connectButtonNorth"
+        android:layout_alignRight="@+id/connectButtonNorth"
+        android:layout_alignEnd="@+id/connectButtonNorth" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keyboard On/Off"
+        android:id="@+id/keyboardOnOffButton"
+        android:layout_below="@+id/connectButtonNorth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <com.example.anirudh.accmove.ZanyEditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTemporary"
+        android:layout_above="@+id/startStopButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UP"
+            android:id="@+id/buttonUP" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOWN"
+            android:id="@+id/buttonDOWN" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEFT"
+            android:id="@+id/buttonLEFT" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RIGHT"
+            android:id="@+id/buttonRIGHT" />
+    </LinearLayout>
+
+
+</RelativeLayout>
